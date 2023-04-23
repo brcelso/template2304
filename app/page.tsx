@@ -121,7 +121,7 @@ export default function IndexPage() {
 
       <ExamplesNav className="[&>a:first-child]:text-primary" />
       
-      <div className="overflow-hidden rounded-lg">
+      <div className="overflow-hidden rounded-lg border bg-background shadow-xl">
         <TradingViewWidget />
         </div>
 
