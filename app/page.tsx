@@ -55,7 +55,7 @@ export default function IndexPage() {
               GitHub
             </Link>
             </div>
-           </div>
+             </div>
             </section>
              <section className="pb-8 md:pb-10">
             <div className="flex w-full items-center justify-between">
@@ -135,15 +135,15 @@ export default function IndexPage() {
           className="hidden dark:block"
         />
       </section>
-      
+      <section className="hidden md:block">
 
-      <div className="flex max-w-[980px] flex-col items-start gap-2 overflow-hidden rounded-lg">
-          <TradingViewWidget />
+      <div className="overflow-hidden rounded-lg">
+        <TradingViewWidget />
         </div>
         {/*<div className="overflow-hidden rounded-lg border bg-background shadow-xl">
           <DashboardPage />
               </div>*/}
-      
+      </section>
     </div>
   )
 }
