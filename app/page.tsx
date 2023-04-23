@@ -120,7 +120,7 @@ export default function IndexPage() {
             </section>
 
       <ExamplesNav className="[&>a:first-child]:text-primary" />
-      <section className="space-y-8 overflow-hidden rounded-lg border-2 border-primary dark:border-muted md:hidden">
+      {/*<section className="space-y-8 overflow-hidden rounded-lg border-2 border-primary dark:border-muted md:hidden">
         <Image
           src="/examples/dashboard-light.png"
           width={1280}
@@ -135,8 +135,8 @@ export default function IndexPage() {
           alt="Dashboard"
           className="hidden dark:block"
         />
-      </section>
-      <section className="hidden md:block">
+              </section> */}
+              <section className="hidden md:block">
 
       <div className="overflow-hidden rounded-lg">
         <TradingViewWidget />
