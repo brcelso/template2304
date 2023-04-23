@@ -57,7 +57,7 @@ function TradingViewWidget() {
           "height": 400,
           "locale": "en",
           "colorTheme": "",
-          "autosize": false,
+          "autosize": true,
           "showVolume": false,
           "showMA": false,
           "hideDateRanges": false,
