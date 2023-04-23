@@ -135,7 +135,7 @@ export default function IndexPage() {
           className="hidden dark:block"
         />
       </section>
-      <section className="hidden md:block">
+      
 
       <div className="flex max-w-[980px] flex-col items-start gap-2 overflow-hidden rounded-lg">
           <TradingViewWidget />
@@ -143,7 +143,7 @@ export default function IndexPage() {
         {/*<div className="overflow-hidden rounded-lg border bg-background shadow-xl">
           <DashboardPage />
               </div>*/}
-      </section>
+      
     </div>
   )
 }
