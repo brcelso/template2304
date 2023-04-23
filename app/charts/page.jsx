@@ -53,8 +53,8 @@ function TradingViewWidget() {
               ]
           ],
           "chartOnly": false,
-          "width": 1000,
-          "height": 500,
+          "width": 750,
+          "height": 400,
           "locale": "en",
           "colorTheme": "",
           "autosize": false,
@@ -85,7 +85,6 @@ function TradingViewWidget() {
   return (
     <div className="tradingview-widget-container" ref={contariner}>
       <div className="tradingview-widget-container__widget"></div>
-      <div className="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/AAPL/" rel="noopener noreferrer" target="_blank"><span className="blue-text">AAPL stock price</span></a> by TradingView</div>
     </div>
   );
 }
