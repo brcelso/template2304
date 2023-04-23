@@ -54,6 +54,12 @@ export default function IndexPage() {
               <Icons.gitHub className="mr-2 h-4 w-4" />
               GitHub
             </Link>
+            </div>
+           </div>
+            </section>
+             <section className="pb-8 md:pb-10">
+            <div className="flex w-full items-center justify-between">
+            <div className="flex space-x-4">
             <Link
               target="_blank"
               rel="noreferrer"
@@ -78,6 +84,12 @@ export default function IndexPage() {
               <Icons.twitter className="mr-2 h-4 w-4" />
               Twitter
             </Link>
+            </div>
+            </div>
+            </section>
+            <section className="pb-8 md:pb-10">
+            <div className="flex w-full items-center justify-between">
+            <div className="flex space-x-4">
             <Link
               target="_blank"
               rel="noreferrer"
@@ -102,9 +114,10 @@ export default function IndexPage() {
               <Icons.instagram className="mr-2 h-4 w-4" />
               Instagram
             </Link>
-          </div>
-        </div>
-      </section>
+            </div>
+            </div>
+            </section>
+
       <ExamplesNav className="[&>a:first-child]:text-primary" />
       <section className="space-y-8 overflow-hidden rounded-lg border-2 border-primary dark:border-muted md:hidden">
         <Image
