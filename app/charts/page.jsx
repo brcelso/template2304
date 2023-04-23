@@ -16,23 +16,47 @@ function TradingViewWidget() {
         {
           "symbols": [
             [
+                "Dow Jones",
+                "DJI|All"
+            ],
+            [
+                "S&P500",
+                "SP500|All"
+            ],
+            [
+                "Gold",
+                "GOLD|All"
+            ],
+            [
+                "Bitcoin",
+                "BTCUSD|All"
+            ],
+            [
+                "Brazil",
+                "EWZ|All"
+            ],
+            [
               "Apple",
-              "AAPL|1D"
+              "AAPL|All"
             ],
             [
-              "Google",
-              "GOOGL|1D"
-            ],
-            [
-              "Microsoft",
-              "MSFT|1D"
-            ]
+                "Microsoft",
+                "MSFT|All"
+              ],
+              [
+                "Google",
+                "GOOGL|All"
+              ],
+              [
+                "Meta",
+                "META|All"
+              ]
           ],
           "chartOnly": false,
-          "width": "100%",
-          "height": "100%",
+          "width": 1000,
+          "height": 500,
           "locale": "en",
-          "colorTheme": "dark",
+          "colorTheme": "",
           "autosize": true,
           "showVolume": false,
           "showMA": false,
@@ -41,22 +65,17 @@ function TradingViewWidget() {
           "hideSymbolLogo": false,
           "scalePosition": "right",
           "scaleMode": "Normal",
-          "fontFamily": "Courier New, monospace",
+          "fontFamily": "-apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif",
           "fontSize": "10",
           "noTimeScale": false,
           "valuesTracking": "1",
-          "changeMode": "percent-only",
-          "chartType": "candlesticks",
+          "changeMode": "price-and-percent",
+          "chartType": "area",
           "maLineColor": "#2962FF",
           "maLineWidth": 1,
           "maLength": 9,
-          "lineType": 0,
-          "upColor": "rgba(255, 255, 255, 1)",
-          "downColor": "rgba(0, 0, 0, 1)",
-          "borderUpColor": "rgba(255, 255, 255, 1)",
-          "borderDownColor": "rgba(255, 255, 255, 1)",
-          "wickUpColor": "rgba(255, 255, 255, 1)",
-          "wickDownColor": "rgba(255, 255, 255, 1)"
+          "lineWidth": 2,
+          "lineType": 0
         }`;
       contariner.current.appendChild(script);
     },
@@ -65,6 +84,8 @@ function TradingViewWidget() {
 
   return (
     <div className="tradingview-widget-container" ref={contariner}>
+      <div className="tradingview-widget-container__widget"></div>
+      <div className="tradingview-widget-copyright"><a href="https://www.tradingview.com/symbols/AAPL/" rel="noopener noreferrer" target="_blank"><span className="blue-text">AAPL stock price</span></a> by TradingView</div>
     </div>
   );
 }
