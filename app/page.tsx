@@ -36,6 +36,7 @@ export default function IndexPage() {
           Just Code.
         </PageHeaderDescription>
       </PageHeader>
+      <section className="hidden md:block">
       <section className="pb-8 md:pb-10">
         <div className="flex w-full items-center justify-between">
           <div className="flex space-x-4">
@@ -135,7 +136,7 @@ export default function IndexPage() {
           className="hidden dark:block"
         />
       </section>
-      <section className="hidden md:block">
+      
 
       <div className="overflow-hidden rounded-lg">
         <TradingViewWidget />
