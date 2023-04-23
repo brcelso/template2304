@@ -47,6 +47,8 @@ export function MainNav({ items }: MainNavProps) {
           )}
         </nav>
       ) : null}
+      
+      {/*
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
           <Button
@@ -78,6 +80,7 @@ export function MainNav({ items }: MainNavProps) {
           )}
         </DropdownMenuContent>
       </DropdownMenu>
+              */}
     </div>
   )
 }
