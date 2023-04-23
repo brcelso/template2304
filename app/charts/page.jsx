@@ -16,47 +16,23 @@ function TradingViewWidget() {
         {
           "symbols": [
             [
-                "Dow Jones",
-                "DJI|All"
-            ],
-            [
-                "S&P500",
-                "SP500|All"
-            ],
-            [
-                "Gold",
-                "GOLD|All"
-            ],
-            [
-                "Bitcoin",
-                "BTCUSD|All"
-            ],
-            [
-                "Brazil",
-                "EWZ|All"
-            ],
-            [
               "Apple",
-              "AAPL|All"
+              "AAPL|1D"
             ],
             [
-                "Microsoft",
-                "MSFT|All"
-              ],
-              [
-                "Google",
-                "GOOGL|All"
-              ],
-              [
-                "Meta",
-                "META|All"
-              ]
+              "Google",
+              "GOOGL|1D"
+            ],
+            [
+              "Microsoft",
+              "MSFT|1D"
+            ]
           ],
           "chartOnly": false,
-          "width": 750,
-          "height": 400,
+          "width": "100%",
+          "height": "100%",
           "locale": "en",
-          "colorTheme": "",
+          "colorTheme": "dark",
           "autosize": true,
           "showVolume": false,
           "showMA": false,
@@ -65,17 +41,22 @@ function TradingViewWidget() {
           "hideSymbolLogo": false,
           "scalePosition": "right",
           "scaleMode": "Normal",
-          "fontFamily": "-apple-system, BlinkMacSystemFont, Trebuchet MS, Roboto, Ubuntu, sans-serif",
+          "fontFamily": "Courier New, monospace",
           "fontSize": "10",
           "noTimeScale": false,
           "valuesTracking": "1",
-          "changeMode": "price-and-percent",
-          "chartType": "area",
+          "changeMode": "percent-only",
+          "chartType": "candlesticks",
           "maLineColor": "#2962FF",
           "maLineWidth": 1,
           "maLength": 9,
-          "lineWidth": 2,
-          "lineType": 0
+          "lineType": 0,
+          "upColor": "rgba(255, 255, 255, 1)",
+          "downColor": "rgba(0, 0, 0, 1)",
+          "borderUpColor": "rgba(255, 255, 255, 1)",
+          "borderDownColor": "rgba(255, 255, 255, 1)",
+          "wickUpColor": "rgba(255, 255, 255, 1)",
+          "wickDownColor": "rgba(255, 255, 255, 1)"
         }`;
       contariner.current.appendChild(script);
     },
@@ -84,10 +65,8 @@ function TradingViewWidget() {
 
   return (
     <div className="tradingview-widget-container" ref={contariner}>
-      <div className="tradingview-widget-container__widget"></div>
     </div>
   );
 }
 
 export default memo(TradingViewWidget);
-
