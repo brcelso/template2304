@@ -137,13 +137,13 @@ export default function IndexPage() {
         />
               </section> */}
               
-
+        {/*<div className="overflow-hidden rounded-lg border bg-background shadow-xl">
+          <DashboardPage />
+        </div>*/}
       <div className="overflow-hidden rounded-lg">
         <TradingViewWidget />
         </div>
-        {/*<div className="overflow-hidden rounded-lg border bg-background shadow-xl">
-          <DashboardPage />
-              </div>*/}
+       
       
     </div>
   )
