@@ -16,6 +16,10 @@ function TradingViewWidget() {
         {
           "symbols": [
             [
+                "Brazil",
+                "EWZ|All"
+            ],
+            [
                 "Dow Jones",
                 "DJI|All"
             ],
@@ -32,12 +36,8 @@ function TradingViewWidget() {
                 "BTCUSD|All"
             ],
             [
-                "Brazil",
-                "EWZ|All"
-            ],
-            [
-              "Apple",
-              "AAPL|All"
+                "Apple",
+                "AAPL|All"
             ],
             [
                 "Microsoft",
@@ -69,13 +69,18 @@ function TradingViewWidget() {
           "fontSize": "10",
           "noTimeScale": false,
           "valuesTracking": "1",
-          "changeMode": "price-and-percent",
-          "chartType": "area",
+          "changeMode": "percent-only",
+          "chartType": "candlesticks",
           "maLineColor": "#2962FF",
           "maLineWidth": 1,
           "maLength": 9,
-          "lineWidth": 2,
-          "lineType": 0
+          "lineType": 0,
+          "upColor": "rgba(255, 255, 255, 1)",
+          "downColor": "rgba(0, 0, 0, 1)",
+          "borderUpColor": "rgba(0, 0, 0, 1)",
+          "borderDownColor": "rgba(0, 0, 0, 1)",
+          "wickUpColor": "rgba(0, 0, 0, 1)",
+          "wickDownColor": "rgba(0, 0, 0, 1)"
         }`;
       contariner.current.appendChild(script);
     },
